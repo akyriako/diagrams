@@ -135,6 +135,10 @@ def cleaner_openstack(f):
     return f.lower()
 
 
+def cleaner_opentelekomcloud(f):
+    return f.lower()
+
+
 cleaners = {
     "onprem": cleaner_onprem,
     "aws": cleaner_aws,
@@ -152,6 +156,7 @@ cleaners = {
     "outscale": cleaner_outscale,
     "generic": cleaner_generic,
     "openstack": cleaner_openstack,
+    "opentelekomcloud": cleaner_opentelekomcloud,
 }
 
 

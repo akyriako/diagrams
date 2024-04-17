@@ -20,6 +20,7 @@ providers=(
   "generic"
   "openstack"
   "outscale"
+  "opentelekomcloud"
 )
 
 if ! [ -x "$(command -v round)" ]; then
