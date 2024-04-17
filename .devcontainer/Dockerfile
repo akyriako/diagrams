@@ -4,7 +4,7 @@ FROM python:3.11.9-alpine
 # install system dependencies.
 RUN apk update && apk add --no-cache \
   gcc libc-dev g++ graphviz git bash go imagemagick inkscape ttf-opensans curl fontconfig xdg-utils \
-  nodejs npm
+  nodejs npm sudo doas
 
 # install go package.
 RUN go install github.com/mingrammer/round@latest
@@ -27,3 +27,14 @@ COPY . .
 
 # install python requirements.
 RUN pip install black graphviz jinja2
+
+# ARG USERNAME=ddev
+# ARG GROUPNAME=$USERNAME
+# ARG USER_UID=1000
+# ARG USER_GID=$USER_UID
+
+# RUN addgroup --gid ${USER_UID} ${GROUPNAME}
+# RUN adduser --disabled-password --ingroup ${GROUPNAME} --uid ${USER_UID} ${USERNAME}
+
+# USER ${USERNAME}
+

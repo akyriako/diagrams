@@ -91,7 +91,7 @@ UPPER_WORDS = {
     "openstack": ("rpm", "loci", "nfv", "ec2api"),
     "pve": ("pve"),
     "ibm": ("ibm"),
-    "opentelekomcloud": ("opentelekomcloud"),
+    "opentelekomcloud": ("otc"),
 }
 
 TITLE_WORDS = {
