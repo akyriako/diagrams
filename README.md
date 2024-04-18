@@ -1,6 +1,6 @@
 ![diagrams logo](assets/img/diagrams.png)
 
-# Diagrams for Open Telekom Cloud Extension
+# Diagrams for Open Telekom Cloud
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 [![pypi version](https://badge.fury.io/py/diagrams.svg)](https://badge.fury.io/py/diagrams)
@@ -15,13 +15,15 @@ Diagrams lets you draw the cloud system architecture **in Python code**. It was 
 
 **Diagram as Code** also allows you to **track** the architecture diagram changes in any **version control** system.
 
->  NOTE: It does not control any actual cloud resources nor does it generate cloud formation or terraform code. It is just for drawing the cloud system architecture diagrams.
+> [!NOTE] 
+> It does not control any actual cloud resources nor does it generate cloud formation or terraform code. It is just for drawing the cloud system 
+> architecture diagrams.
 
 ## Providers
 
 ![Open Telekom Cloud](https://img.shields.io/badge/OpenTelekomCloud-%23e20074?labelColor=%23e20074&link=https%3A%2F%2Fwww.open-telekom-cloud.com%2Fen)
 
-in addition supports all the providers included in the original upstream
+in addition supports all the providers included in the original upstream:
 
 ![aws provider](https://img.shields.io/badge/AWS-orange?logo=amazon-aws&color=ff9900)
 ![azure provider](https://img.shields.io/badge/Azure-orange?logo=microsoft-azure&color=0089d6)
