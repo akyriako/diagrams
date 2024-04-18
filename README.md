@@ -12,8 +12,8 @@
 **Diagram as Code**.
 
 > [!IMPORTANT] 
-> Due to the fact that the upstream project seems to be inactive and non-processing/non-responsive to new Issues or Pull Requests for more than 2 years
-> ,the artifacts supporting Open Telekom Cloud has been moved to their own package. 
+> Due to the fact that the upstream project seems to be inactive and non-processing/non-responsive to new Issues or Pull Requests for more than 2 years,
+> the artifacts supporting Open Telekom Cloud has been moved to their own package. 
 > Nevertheless, the repository retains its downstream status and any change that might come in the future either in the other 
 > providers artifacts or in the code itself, will be synced. 
 > Unless nothing changes, the package name in PyPi is from now on `diagrams-otc`. 
