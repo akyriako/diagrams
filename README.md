@@ -12,10 +12,11 @@
 **Diagram as Code**.
 
 > [!IMPORTANT] 
-> Due to the fact that the upstream project seems to be inactive and non-processing Issues or Pull Requests, the artifacts supporting
-> Open Telekom Cloud has been moved to their own package. Nevertheless, the repository retains its downstream status and any change that might
-> come in the future either in the other providers artifacts or in the code itself, will be synced. 
-> Unless nothing changes the package name in PyPi is `diagrams-otc`. 
+> Due to the fact that the upstream project seems to be inactive and non-processing/non-responsive to new Issues or Pull Requests for more than 2 years
+> ,the artifacts supporting Open Telekom Cloud has been moved to their own package. 
+> Nevertheless, the repository retains its downstream status and any change that might come in the future either in the other 
+> providers artifacts or in the code itself, will be synced. 
+> Unless nothing changes, the package name in PyPi is from now on `diagrams-otc`. 
 
 
 Diagrams lets you draw the cloud system architecture **in Python code**. It was born for **prototyping** a new system architecture design without any design tools. You can also describe or visualize the existing system architecture as well. Diagrams currently supports main major providers including: `AWS`, `Azure`, `GCP`, `Kubernetes`, `Alibaba Cloud`, `Oracle Cloud` etc... It also supports `On-Premise` nodes, `SaaS` and major `Programming` frameworks and languages.
