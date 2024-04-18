@@ -3,7 +3,7 @@ id: azure
 title: Azure
 ---
 
-Node classes list of azure provider.
+Node classes list of the azure provider.
 
 ## azure.analytics
 

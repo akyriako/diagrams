@@ -1,13 +1,15 @@
 [tool.poetry]
-name = "diagrams"
-version = "0.23.4"
-description = "Diagram as Code"
+name = "diagrams-otc"
+version = "0.23.6"
+description = "Diagram as Code/Open Telekom Cloud Extensions"
 license = "MIT"
-authors = ["mingrammer <mingrammer@gmail.com>"]
+authors = ["akyriako <akriotis.kyriakos@gmail.com>"]
 readme = "README.md"
-homepage = "https://diagrams.mingrammer.com"
-repository = "https://github.com/mingrammer/diagrams"
-include = ["resources/**/*"]
+homepage = "https://github.com/akyriako/diagrams"
+repository = "https://github.com/akyriako/diagrams"
+include = ["resources/**/*", "assets/**/*"]
+packages = [{include = "diagrams"}]
+
 
 [tool.poetry.dependencies]
 python = "^3.7"
@@ -24,3 +26,7 @@ black = "^22.12.0"
 
 [tool.black]
 line-length = 120
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

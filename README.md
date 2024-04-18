@@ -1,25 +1,37 @@
-![diagrams logo](assets/img/diagrams.png)
+![diagrams logo](assets/img/diagrams-otc.png)
 
-# Diagrams
+# Diagrams for Open Telekom Cloud
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-[![pypi version](https://badge.fury.io/py/diagrams.svg)](https://badge.fury.io/py/diagrams)
+[![pypi version](https://badge.fury.io/py/diagrams-otc.svg)](https://badge.fury.io/py/diagrams-otc)
 ![python version](https://img.shields.io/badge/python-%3E%3D%203.6-blue?logo=python)
-![Run tests](https://github.com/mingrammer/diagrams/workflows/Run%20tests/badge.svg?branch=master)
-[![todos](https://badgen.net/https/api.tickgit.com/badgen/github.com/mingrammer/diagrams?label=todos)](https://www.tickgit.com/browse?repo=github.com/mingrammer/diagrams)
-![contributors](https://img.shields.io/github/contributors/mingrammer/diagrams)
-
-<a href="https://www.buymeacoffee.com/mingrammer" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+<!-- ![Run tests](https://github.com/akyriako/diagrams/workflows/Run%20tests/badge.svg?branch=master) -->
+<!-- [![todos](https://badgen.net/https/api.tickgit.com/badgen/github.com/akyriako/diagrams?label=todos)](https://www.tickgit.com/browse?repo=github.com/akyriako/diagrams)
+![contributors](https://img.shields.io/github/contributors/akyriako/diagrams) -->
 
 **Diagram as Code**.
+
+> [!IMPORTANT] 
+> Due to the fact that the upstream project seems to be inactive and non-processing/non-responsive to new Issues or Pull Requests for more than 2 years,
+> the artifacts supporting Open Telekom Cloud has been moved to their own package. 
+> Nevertheless, the repository retains its downstream status and any change that might come in the future either in the other 
+> providers artifacts or in the code itself, will be synced. 
+> Unless nothing changes, the package name in PyPi is from now on `diagrams-otc`. 
+
 
 Diagrams lets you draw the cloud system architecture **in Python code**. It was born for **prototyping** a new system architecture design without any design tools. You can also describe or visualize the existing system architecture as well. Diagrams currently supports main major providers including: `AWS`, `Azure`, `GCP`, `Kubernetes`, `Alibaba Cloud`, `Oracle Cloud` etc... It also supports `On-Premise` nodes, `SaaS` and major `Programming` frameworks and languages.
 
 **Diagram as Code** also allows you to **track** the architecture diagram changes in any **version control** system.
 
->  NOTE: It does not control any actual cloud resources nor does it generate cloud formation or terraform code. It is just for drawing the cloud system architecture diagrams.
+> [!NOTE] 
+> It does not control any actual cloud resources nor does it generate cloud formation or terraform code. It is just for drawing the cloud system 
+> architecture diagrams.
 
 ## Providers
+
+![Open Telekom Cloud](https://img.shields.io/badge/OpenTelekomCloud-%23e20074?labelColor=%23e20074&link=https%3A%2F%2Fwww.open-telekom-cloud.com%2Fen)
+
+in addition supports all the providers included in the original upstream:
 
 ![aws provider](https://img.shields.io/badge/AWS-orange?logo=amazon-aws&color=ff9900)
 ![azure provider](https://img.shields.io/badge/Azure-orange?logo=microsoft-azure&color=0089d6)
@@ -49,14 +61,17 @@ It uses [Graphviz](https://www.graphviz.org/) to render the diagram, so you need
 
 ```shell
 # using pip (pip3)
-$ pip install diagrams
+$ pip install diagrams-otc
 
 # using pipenv
-$ pipenv install diagrams
+$ pipenv install diagrams-otc
 
 # using poetry
-$ poetry add diagrams
+$ poetry add diagrams-otc
 ```
+
+> [!NOTE] 
+> Documentation and Examples refer to the original site of upstream.
 
 You can start with [quick start](https://diagrams.mingrammer.com/docs/getting-started/installation#quick-start). Check out [guides](https://diagrams.mingrammer.com/docs/guides/diagram) for more details, and you can find all available nodes list in [here](https://diagrams.mingrammer.com/docs/nodes/aws).
 
@@ -71,16 +86,6 @@ You can find all the examples on the [examples](https://diagrams.mingrammer.com/
 ## Contributing
 
 To contribute to diagram, check out [contribution guidelines](CONTRIBUTING.md).
-
-> Let me know if you are using diagrams! I'll add you in showcase page. (I'm working on it!) :)
-
-## Who uses it?
-
-[Apache Airflow](https://github.com/apache/airflow) is the most popular data workflow Orchestrator. Airflow uses Diagrams to generate architecture diagrams in their documentation.
-
-[Cloudiscovery](https://github.com/Cloud-Architects/cloudiscovery) helps you to analyze resources in your cloud (AWS/GCP/Azure/Alibaba/IBM) account. It allows you to create a diagram of analyzed cloud resource map based on this Diagrams library, so you can draw your existing cloud infrastructure with Cloudiscovery.
-
-[Airflow Diagrams](https://github.com/feluelle/airflow-diagrams) is an Airflow plugin that aims to easily visualise your Airflow DAGs on service level from providers like AWS, GCP, Azure, etc. via diagrams.
 
 ## Other languages
 
