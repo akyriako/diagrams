@@ -89,7 +89,7 @@ with Diagram("Server Group Example OTC", show=False, direction="TB"):
 
 which will generate the following diagram in PNG format:
 
-![Server Group Example in OTC](assets/img/server_group_example_otc.png)
+![Server Group Example in OTC](assets/img/otc-example.png)
 
 > [!NOTE] 
 > The rest of the documentation and examples refer to the original
