@@ -1,4 +1,4 @@
-![diagrams logo](assets/img/diagrams-otc.png)
+![diagrams logo](assets/img/diagrams-header-logo.png)
 
 # Diagrams for Open Telekom Cloud
 
