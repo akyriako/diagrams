@@ -3,7 +3,7 @@
 # Diagrams for Open Telekom Cloud
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-[![pypi version](https://badge.fury.io/py/diagrams.svg)](https://badge.fury.io/py/diagrams)
+[![pypi version](https://badge.fury.io/py/diagrams-otc.svg)](https://badge.fury.io/py/diagrams-otc)
 ![python version](https://img.shields.io/badge/python-%3E%3D%203.6-blue?logo=python)
 <!-- ![Run tests](https://github.com/akyriako/diagrams/workflows/Run%20tests/badge.svg?branch=master) -->
 <!-- [![todos](https://badgen.net/https/api.tickgit.com/badgen/github.com/akyriako/diagrams?label=todos)](https://www.tickgit.com/browse?repo=github.com/akyriako/diagrams)

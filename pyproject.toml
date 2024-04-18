@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "diagrams-otc"
-version = "0.23.4"
+version = "0.23.5"
 description = "Diagram as Code/Open Telekom Cloud Extensions"
 license = "MIT"
 authors = ["akyriako <akriotis.kyriakos@gmail.com>"]
 readme = "README.md"
 homepage = "https://github.com/akyriako/diagrams"
 repository = "https://github.com/akyriako/diagrams"
-include = ["resources/**/*"]
+include = ["resources/**/*", "assets/**/*"]
 packages = [{include = "diagrams"}]
 
 
