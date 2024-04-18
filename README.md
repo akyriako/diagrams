@@ -76,18 +76,30 @@ $ poetry add diagrams-otc
 and then you are ready to try your very first OTC diagram by executing the Python code below:
 
 ```python
-from diagrams import Diagram
+from diagrams import Diagram, Cluster
 from diagrams.opentelekomcloud.computing import Ecs
 from diagrams.opentelekomcloud.database import Rds
-from diagrams.opentelekomcloud.network import Elb
-from diagrams.opentelekomcloud.network import Eip
+from diagrams.opentelekomcloud.network import Elb, Dns, Eip
 
-with Diagram("Server Group Example OTC", show=False, direction="TB"):
-    Eip("Elastic IPv4") >> Elb("Load Balancer") >> [Ecs("ECS-Worker-1"),
-                  Ecs("ECS-Worker-2"),
-                  Ecs("ECS-Worker-3"),
-                  Ecs("ECS-Worker-4"),
-                  Ecs("ECS-Worker-5")] >> Rds("Backend Database")
+with Diagram("Basic Web App", show=False):
+    dns = Dns("dns")
+    eip = Eip("eip")
+
+    dns >> eip
+
+    with Cluster("vpc"):
+        elb = Elb("dns")
+
+        with Cluster("app-subnet"):
+            app = [Ecs("app1"),
+            Ecs("app2")]
+
+        with Cluster("db-subnet"):
+            db_primary = Rds("primary")
+            db_primary - [Rds("replica1"),
+                        Rds("replica2")]
+
+    eip >> elb >> app >> db_primary
 ```
 
 save it in a python file, e.g. `diagram.py` and execute it with the following command:
@@ -98,7 +110,7 @@ python diagram.py
 
 which will generate an diagram in PNG format:
 
-![Server Group Example in OTC](assets/img/otc-example.png)
+![Basic Web App](assets/img/basic_web_app.png)
 
 > [!NOTE] 
 > The rest of the documentation and examples refer to the original
