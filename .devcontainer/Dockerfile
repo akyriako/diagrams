@@ -25,8 +25,8 @@ WORKDIR /usr/src/diagrams
 # Copy the rest of your app's source code from your host to your image filesystem.
 COPY . .
 
-# install python requirements.
-RUN pip install black graphviz jinja2
+# # install python requirements.
+# RUN pip install black graphviz jinja2
 
 # ARG USERNAME=ddev
 # ARG GROUPNAME=$USERNAME
@@ -37,4 +37,8 @@ RUN pip install black graphviz jinja2
 # RUN adduser --disabled-password --ingroup ${GROUPNAME} --uid ${USER_UID} ${USERNAME}
 
 # USER ${USERNAME}
+
+# install python requirements.
+RUN pip install black graphviz jinja2 build twine wheel poetry
+
 

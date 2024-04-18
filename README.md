@@ -5,11 +5,9 @@
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 [![pypi version](https://badge.fury.io/py/diagrams.svg)](https://badge.fury.io/py/diagrams)
 ![python version](https://img.shields.io/badge/python-%3E%3D%203.6-blue?logo=python)
-![Run tests](https://github.com/mingrammer/diagrams/workflows/Run%20tests/badge.svg?branch=master)
-[![todos](https://badgen.net/https/api.tickgit.com/badgen/github.com/mingrammer/diagrams?label=todos)](https://www.tickgit.com/browse?repo=github.com/mingrammer/diagrams)
-![contributors](https://img.shields.io/github/contributors/mingrammer/diagrams)
-
-<a href="https://www.buymeacoffee.com/mingrammer" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+![Run tests](https://github.com/akyriako/diagrams/workflows/Run%20tests/badge.svg?branch=master)
+[![todos](https://badgen.net/https/api.tickgit.com/badgen/github.com/akyriako/diagrams?label=todos)](https://www.tickgit.com/browse?repo=github.com/akyriako/diagrams)
+![contributors](https://img.shields.io/github/contributors/akyriako/diagrams)
 
 **Diagram as Code**.
 
@@ -20,6 +18,10 @@ Diagrams lets you draw the cloud system architecture **in Python code**. It was 
 >  NOTE: It does not control any actual cloud resources nor does it generate cloud formation or terraform code. It is just for drawing the cloud system architecture diagrams.
 
 ## Providers
+
+![Open Telekom Cloud](https://img.shields.io/badge/OpenTelekomCloud-%23e20074?labelColor=%23e20074&link=https%3A%2F%2Fwww.open-telekom-cloud.com%2Fen)
+
+in addition supports all the providers included in the original upstream
 
 ![aws provider](https://img.shields.io/badge/AWS-orange?logo=amazon-aws&color=ff9900)
 ![azure provider](https://img.shields.io/badge/Azure-orange?logo=microsoft-azure&color=0089d6)
