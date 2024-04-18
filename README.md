@@ -70,8 +70,30 @@ $ pipenv install diagrams-otc
 $ poetry add diagrams-otc
 ```
 
+Then you can try your first diagram by executing the code below:
+
+```python
+from diagrams import Diagram
+from diagrams.opentelekomcloud.computing import Ecs
+from diagrams.opentelekomcloud.database import Rds
+from diagrams.opentelekomcloud.network import Elb
+from diagrams.opentelekomcloud.network import Eip
+
+with Diagram("Server Group Example OTC", show=False, direction="TB"):
+    Eip("Elastic IPv4") >> Elb("Load Balancer") >> [Ecs("ECS-Worker-1"),
+                  Ecs("ECS-Worker-2"),
+                  Ecs("ECS-Worker-3"),
+                  Ecs("ECS-Worker-4"),
+                  Ecs("ECS-Worker-5")] >> Rds("Backend Database")
+```
+
+which will generate the following diagram in PNG format:
+
+![Server Group Example in OTC](assets/img/server_group_example_otc.png)
+
 > [!NOTE] 
-> Documentation and Examples refer to the original site of upstream.
+> The rest of the documentation and examples refer to the original
+> upstream site as is.
 
 You can start with [quick start](https://diagrams.mingrammer.com/docs/getting-started/installation#quick-start). Check out [guides](https://diagrams.mingrammer.com/docs/guides/diagram) for more details, and you can find all available nodes list in [here](https://diagrams.mingrammer.com/docs/nodes/aws).
 
