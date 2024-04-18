@@ -57,7 +57,10 @@ It requires **Python 3.7** or higher, check your Python version first.
 
 It uses [Graphviz](https://www.graphviz.org/) to render the diagram, so you need to [install Graphviz](https://graphviz.gitlab.io/download/) to use **diagrams**. After installing graphviz (or already have it), install the **diagrams**.
 
-> macOS users can download the Graphviz via `brew install graphviz` if you're using [Homebrew](https://brew.sh).
+> [!TIP]
+> You can quickly install Graphviz either via pip: `pip install graphviz` (recommended) or via brew: `brew install graphviz` 
+
+Install the Diagrams for Open Telekom Cloud directly from Pypi choosing one of the following methods:
 
 ```shell
 # using pip (pip3)
@@ -70,7 +73,7 @@ $ pipenv install diagrams-otc
 $ poetry add diagrams-otc
 ```
 
-Then you can try your first diagram by executing the code below:
+and then you are ready to try your very first OTC diagram by executing the Python code below:
 
 ```python
 from diagrams import Diagram
@@ -87,7 +90,13 @@ with Diagram("Server Group Example OTC", show=False, direction="TB"):
                   Ecs("ECS-Worker-5")] >> Rds("Backend Database")
 ```
 
-which will generate the following diagram in PNG format:
+save it in a python file, e.g. `diagram.py` and execute it with the following command:
+
+```python
+python diagram.py
+```
+
+which will generate an diagram in PNG format:
 
 ![Server Group Example in OTC](assets/img/otc-example.png)
 
