@@ -1,13 +1,13 @@
 ![diagrams logo](assets/img/diagrams.png)
 
-# Diagrams
+# Diagrams for Open Telekom Cloud Extension
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 [![pypi version](https://badge.fury.io/py/diagrams.svg)](https://badge.fury.io/py/diagrams)
 ![python version](https://img.shields.io/badge/python-%3E%3D%203.6-blue?logo=python)
 ![Run tests](https://github.com/akyriako/diagrams/workflows/Run%20tests/badge.svg?branch=master)
-[![todos](https://badgen.net/https/api.tickgit.com/badgen/github.com/akyriako/diagrams?label=todos)](https://www.tickgit.com/browse?repo=github.com/akyriako/diagrams)
-![contributors](https://img.shields.io/github/contributors/akyriako/diagrams)
+<!-- [![todos](https://badgen.net/https/api.tickgit.com/badgen/github.com/akyriako/diagrams?label=todos)](https://www.tickgit.com/browse?repo=github.com/akyriako/diagrams)
+![contributors](https://img.shields.io/github/contributors/akyriako/diagrams) -->
 
 **Diagram as Code**.
 
@@ -51,13 +51,13 @@ It uses [Graphviz](https://www.graphviz.org/) to render the diagram, so you need
 
 ```shell
 # using pip (pip3)
-$ pip install diagrams
+$ pip install diagrams-otc
 
 # using pipenv
-$ pipenv install diagrams
+$ pipenv install diagrams-otc
 
 # using poetry
-$ poetry add diagrams
+$ poetry add diagrams-otc
 ```
 
 You can start with [quick start](https://diagrams.mingrammer.com/docs/getting-started/installation#quick-start). Check out [guides](https://diagrams.mingrammer.com/docs/guides/diagram) for more details, and you can find all available nodes list in [here](https://diagrams.mingrammer.com/docs/nodes/aws).
@@ -73,16 +73,6 @@ You can find all the examples on the [examples](https://diagrams.mingrammer.com/
 ## Contributing
 
 To contribute to diagram, check out [contribution guidelines](CONTRIBUTING.md).
-
-> Let me know if you are using diagrams! I'll add you in showcase page. (I'm working on it!) :)
-
-## Who uses it?
-
-[Apache Airflow](https://github.com/apache/airflow) is the most popular data workflow Orchestrator. Airflow uses Diagrams to generate architecture diagrams in their documentation.
-
-[Cloudiscovery](https://github.com/Cloud-Architects/cloudiscovery) helps you to analyze resources in your cloud (AWS/GCP/Azure/Alibaba/IBM) account. It allows you to create a diagram of analyzed cloud resource map based on this Diagrams library, so you can draw your existing cloud infrastructure with Cloudiscovery.
-
-[Airflow Diagrams](https://github.com/feluelle/airflow-diagrams) is an Airflow plugin that aims to easily visualise your Airflow DAGs on service level from providers like AWS, GCP, Azure, etc. via diagrams.
 
 ## Other languages
 
