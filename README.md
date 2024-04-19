@@ -128,12 +128,8 @@ You can find all the examples on the [examples](https://diagrams.mingrammer.com/
 
 ## Contributing
 
-To contribute to diagram, check out [contribution guidelines](CONTRIBUTING.md).
+To contribute to Diagrams by adding a new provider or additional Open Telekom Cloud services, check out [contribution guidelines](CONTRIBUTING.md).
 
 ## Other languages
 
 - If you are familiar with Go, you can use [go-diagrams](https://github.com/blushft/go-diagrams) as well.
-
-## License
-
-[MIT](LICENSE)

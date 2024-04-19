@@ -30,13 +30,12 @@ ffmpeg -i my_big_image.jpg -vf scale=w=256:h=256:force_original_aspect_ratio=dec
 
 Then just run the `./autogen.sh` to generate the added or updated node classes. (cf. [DEVELOPMENT][DEVELOPMENT.md])
 
-> IMPORTANT NOTE: To run `autogen.sh`, you need the [round][round], [black][black] and
+> [!IMPORTANT] 
+> To run `autogen.sh`, you need the [round][round], [black][black] and
 > [inkscape][inkscape] command line tools that are used for cleaning the image
 > resource filenames and formatting the generated python code.
 >
-> macOS users can download inkscape via Homebrew.
->
-> Or you can use the docker image.
+> macOS users can download inkscape via Homebrew, or you can use the docker image.
 
 [DEVELOPMENT.md]: ./DEVELOPMENT.md
 [round]: https://github.com/mingrammer/round
@@ -45,7 +44,7 @@ Then just run the `./autogen.sh` to generate the added or updated node classes. 
 
 ### Update Aliases
 
-Some node classes have alias. For example, `aws.compute.ECS` class is an alias
+Some node classes have an alias. For example, `aws.compute.ECS` class is an alias
 of `aws.compute.ElasticContainerService` class. Aliases also were auto-generated
 from `ALIASES` map in [config.py](config.py).
 
@@ -54,13 +53,12 @@ or update the `ALIASES` map in [config.py](config.py).
 
 Then just run the `./autogen.sh` to generate the added or updated aliases. (cf. [DEVELOPMENT][DEVELOPMENT.md])
 
-> IMPORTANT NOTE: To run `autogen.sh`, you need the [round][round] and
+> [!IMPORTANT] 
+> To run `autogen.sh`, you need the [round][round] and
 > [inkscape][inkscape] command line tools that are used for cleaning the image
 > resource filenames.
 >
-> macOS users can download inkscape via Homebrew.
->
-> Or you can use the docker image.
+> macOS users can download inkscape via Homebrew, or you can use the docker image.
 
 ## Run Tests
 
