@@ -46,9 +46,7 @@ poetry publish
 
 ## Docker Container
 
-If you are not interested in using Dev Containers and you want to fallback to the setup of the upstream Diagrams, you can follow the documentation guide they provide:
-
-[Documentation Guide](https://github.com/mingrammer/diagrams/blob/master/DEVELOPMENT.md)
+If you are not interested in using Dev Containers and you want to fallback to the setup of the upstream Diagrams, you can follow the [Documentation Guide](https://github.com/mingrammer/diagrams/blob/master/DEVELOPMENT.md) they provide.
 
 > [!NOTE]
 > The folder `docker/dev` is not needed by Diagrams for Open Telekom Cloud, but is left there to ensure the compatibility
