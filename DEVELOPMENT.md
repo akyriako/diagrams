@@ -1,77 +1,52 @@
 # Development Guide
 
-## Docker local development setup
+> [!IMPORTANT] 
+> The Development Guide for Diagrams for Open Telekom Cloud is taking a slightly different approach than the upstream repository to create
+> a development environment (Dev Containers) but they both share roots with the same notion of using disposable docker containers as
+> development environments and the Dockerfile of this project stems from the original but with a few enhancements.  
 
-You should have docker installed in your system, if not click [here](https://docs.docker.com/get-docker/).
+## Dev Container
 
-1. Go to diagrams root directory.
+Any IDE that supports [Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers), but in this case everything is tailored for Visual Studio Code, will build a container with all the necessary prerequisites to get you started based on the extensions and features defined in **devcontainer.json** and in the accompanying `Dockerfile`. A `python:3.11.9-alpine` container will be spawned with the following extras pre-installed:
 
-2. Build the docker image.
+### Visual Studio Code Extensions
 
-    ```shell
-    docker build --tag diagrams:1.0 -f ./docker/dev/Dockerfile .
-    ```
+- Python, Python Debugger, 
+- Markdown, Markdown All in One, Markdown Preview Enhanced 
+- Git Graph
+- Resource Monitor
+- GraphViz Diagrams Previewer
 
-3. Create the container, run in background and mount the project source code.
+## Build & Publish changes to PyPi
 
-    ```shell
-    docker run -d \
-    -it \
-    --name diagrams \
-    --mount type=bind,source="$(pwd)",target=/usr/src/diagrams \
-    diagrams:1.0
-    ```
+Diagrams project is using [Poetry]() for Python environment isolation, package management and publishing. All the configuration defining the parameters and metadata of the project along with its build and packaging requirements can be found at `pyproject.toml`. 
 
-4. Run unit tests in the host using the container to confirm that it's working.
+### Build
 
-    ```shell
-    docker exec diagrams python -m unittest tests/*.py -v
-    ```
+In order to build the project you just have to execute the command:
 
-5. Run the bash script `autogen.sh` to test.
+```shell
+poetry build
+```
 
-    ```shell
-    docker exec diagrams ./autogen.sh
-    ```
+which will place the output files in `/dist`, already excluded in `.gitignore`
 
-6. If the unit tests and the bash script `autogen.sh` is working correctly, then your system is now ready for development.
+### Publish
 
+Publishing requires setting up the Poetry configuration with the your PyPi token:
 
-## Mac local development setup
+```shell
+poetry config pypi-token.pypi pypi-XXXXXXXXXXXXXXXXXXXX
+```
 
-To be able to develop and run diagrams locally on you Mac device, you should have [Python](https://www.python.org/downloads/), [Go](https://golang.org/doc/install), and [brew](https://brew.sh/) installed on your system.
+and then publishing, is just a simple command:
 
-1. Go to diagrams root directory.
+```shell
+poetry publish
+```
 
-2. Install poetry, the Python project management package used by diagrams.
+## Docker Container
 
-    ```shell
-    pip install poetry
-    ```
+If you are not interested in using Dev Containers and you want to fallback to the setup of the upstream Diagrams, you can follow the documentation guide they provide:
 
-3. Install the project's Python dependencies.
-
-    ```shell
-    poetry install
-    ```
-
-4. Install diagrams binary dependencies.
-
-    ```shell
-    brew install imagemagick inkscape black
-    go get github.com/mingrammer/round
-    ```
-
-5. Run unit tests to confirm that it's working.
-
-    ```shell
-    python -m unittest tests/*.py -v
-    ```
-
-6. Run the bash script `autogen.sh` to test.
-
-    ```shell
-    ./autogen.sh
-    ```
-
-7. If the unit tests and the bash script `autogen.sh` is working correctly, then your system is now ready for development.
+[Documentation Guide](https://github.com/mingrammer/diagrams/blob/master/DEVELOPMENT.md)

@@ -1,11 +1,11 @@
 # Contribution Guide
 
-You shouldn't edit the node class files (all files under `diagrams/` directory) by
-yourself.
+> [!CAUTION] 
+> You **shouldn't edit** the node class files (all files under `diagrams/` directory) manually.
 
 ## Set up your environment
 
-- See [DEVELOPMENT][DEVELOPMENT.md]
+- See [Development Guide][DEVELOPMENT.md]
 
 ## Resources
 
