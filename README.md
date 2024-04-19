@@ -112,13 +112,15 @@ which will generate an diagram in PNG format:
 
 ![Basic Web App](assets/img/basic_web_app.png)
 
+The list Open Telekom Cloud services currently supported can be found [here](docs/nodes/opentelekomcloud.md).
+
+## Examples
+
 > [!NOTE] 
 > The rest of the documentation and examples refer to the original
 > upstream site as is.
 
 You can start with [quick start](https://diagrams.mingrammer.com/docs/getting-started/installation#quick-start). Check out [guides](https://diagrams.mingrammer.com/docs/guides/diagram) for more details, and you can find all available nodes list in [here](https://diagrams.mingrammer.com/docs/nodes/aws).
-
-## Examples
 
 | Event Processing                                             | Stateful Architecture                                        | Advanced Web Service                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
