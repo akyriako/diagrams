@@ -1,4 +1,4 @@
-![diagrams logo](assets/img/diagrams-header-nologo-w.png)
+![diagrams logo](assets/img/logo_headline_kombination_m_s_m.png)
 
 # Diagrams for Open Telekom Cloud
 
@@ -134,4 +134,4 @@ To contribute to Diagrams by adding a new provider or additional Open Telekom Cl
 
 ## Other languages
 
-- If you are familiar with Go, you can use [go-diagrams](https://github.com/blushft/go-diagrams) as well.
+If you are familiar with Go, you can use [go-diagrams](https://github.com/blushft/go-diagrams) as well.
