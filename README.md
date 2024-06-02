@@ -1,5 +1,3 @@
-![diagrams logo](assets/img/logo_headline_kombination_m_s_m.png)
-
 # Diagrams for Open Telekom Cloud
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
